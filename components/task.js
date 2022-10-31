@@ -24,5 +24,16 @@ const Task = (props)=>{
 }
 const styles = StyleSheet.create({
 
+    item:{
+        backgroundColor:'#FFF',
+        margin: 3,
+        padding: 15,
+        borderRadius: 10,
+    },
+    itemLeft:{},
+    square:{},
+    itemText:{},
+    circular:{},
+
 });
 export default Task;
