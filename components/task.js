@@ -1,10 +1,10 @@
 import React from "react";
 import { View , Text, StyleSheet} from "react-native";
-const Task = ()=>{
+const Task = (props)=>{
 
     return(
-        <View style={styles.cotainerTasks}>
-        <Text style={styles.Tarefas}>Começar a ver ReactNative!</Text>
+        <View>
+            <Text>{props.text}</Text>
         </View>
     )
 }
