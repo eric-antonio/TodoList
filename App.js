@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { KeyboardAvoidingView, Platform, StyleSheet, Text, View } from 'react-native';
 import Task from './components/Task';
 
 export default function App() {
@@ -22,7 +22,10 @@ export default function App() {
         </View>
 
       </View>
+      {/* Itremos adicionar as tarefa aqui! */}
+      <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding " : "heigth"}style={styles.writeTasWraper}>
 
+      </KeyboardAvoidingView>
 
     </View>
   );
