@@ -30,17 +30,8 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 10,
     },
-    itemLeft:{
-        flexDirection: 'row',
-        alignItems: 'center',
-        flexWrap:'warp',
-    },
-    square:{ 
-        width: 24,
-        height: 24,
-        backgroundColor: '#55BCF6',
-        opacity:0.4,
-    },
+    itemLeft:{},
+    square:{},
     itemText:{},
     circular:{},
 
