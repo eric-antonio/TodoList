@@ -14,6 +14,8 @@ export default function App() {
 
           {/* This is where the tasks will go! */}
           
+          {/*Essas tasks na verade são pequenos componenetes 
+          No caso apresenrado o componete foi exibido 3 vezes */}
           <Task text={'Taks 1'}/>
           <Task text={'Taks 2'}/>
           <Task text={'Taks 3'}/>
@@ -42,6 +44,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
-  items: {},
+  items: {
+    marginTop:30,
+  },
 });
 
