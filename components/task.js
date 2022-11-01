@@ -6,7 +6,7 @@ const Task = (props)=>{
     return(
         <View style={styles.item}>
             <View style={styles.itemLeft}>
-                
+
                 {/* Qualquer problema muda o toucheBar para View */}
 
                 <TouchableOpacity style={styles.square}></TouchableOpacity>
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         height:12,
         borderColor:'#55BCF6',
         borderWidth:2,
-        boederRadius: 5,
+        boederRadius: 10,
         marginLeft: 230,
     },
 
