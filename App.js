@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { KeyboardAvoidingView, Platform, StyleSheet, Text, View } from 'react-native';
+import { KeyboardAvoidingView, Platform, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Task from './components/Task';
 
 export default function App() {
@@ -23,7 +23,16 @@ export default function App() {
 
       </View>
       {/* Itremos adicionar as tarefa aqui! */}
-      <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding " : "heigth"}style={styles.writeTasWraper}>
+      <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding " : "heigth"}style={styles.writeTaskWraper}>
+        <TextInput style={styles.input} placeholder={'Escreva uma tarefa!'}/>
+
+        <TouchableOpacity>
+          <View style={styles.addWrapper}>
+
+            <Text style={styles.addText}>+</Text>
+
+          </View>
+        </TouchableOpacity>
 
       </KeyboardAvoidingView>
 
@@ -47,8 +56,27 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
+  
   items: {
     marginTop:30,
+  },writeTaskWraper:{
+    position:'absolute',
+    bottom:60,
+    width:'100%',
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center'
+
   },
+  input:{
+    paddingVertical:15,
+    paddingHorizontal: 15,
+    backgroundColor:'#ffff',
+    borderRadius: 60,
+    width:250,
+
+},
+  addWrapper:{},
+  addText:{},
 });
 
