@@ -23,11 +23,18 @@ const styles = StyleSheet.create({
 
     item:{
         backgroundColor:'#FFF',
-        margin: 3,
+        marginBottom: 10,
         padding: 15,
         borderRadius: 10,
+        flexDirection: 'row',
+        alignItems:'center',
+        justifyContent:'space-between',
     },
-    itemLeft:{},
+    itemLeft:{
+        flexDirection: 'row',
+        alignItems:'center',
+        flexWrap:'wrap',
+    },
     square:{
         width: 24,
         height: 24,
