@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     paddingHorizontal:20,
   },
   sectionTitle: {
-  
     fontSize: 24,
     fontWeight: 'bold',
   },
@@ -63,9 +62,7 @@ const styles = StyleSheet.create({
     position:'absolute',
     bottom:60,
     width:'100%',
-    flexDirection:'row',
-    justifyContent:'space-between',
-    alignItems:'center'
+    
 
   },
   input:{
