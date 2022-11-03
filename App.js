@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
   
   items: {
     marginTop:30,
-  },writeTaskWraper:{
+  },
+  writeTaskWraper:{
     position:'absolute',
     bottom:60,
     width:'100%',
@@ -71,11 +72,22 @@ const styles = StyleSheet.create({
     paddingVertical:15,
     paddingHorizontal: 15,
     backgroundColor:'#ffff',
+    borderColor:'C0C0C0',
+    borderWidth: 1,
     borderRadius: 60,
     width:250,
 
 },
-  addWrapper:{},
+  addWrapper:{
+    width: 60,
+    height:60,
+    backgroundColor: '#FFF',
+    borderRadius:60,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor:'C0C0C0',
+    borderWidth: 1,
+  },
   addText:{},
 });
 
