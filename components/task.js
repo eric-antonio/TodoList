@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
         marginRight:15,
     },
     itemText:{
-        maxWidth:'80%',
+        maxWidth:'100%',
+       
        
     },
     circular:{
@@ -55,7 +56,8 @@ const styles = StyleSheet.create({
         borderColor:'#55BCF6',
         borderWidth:2,
         borderRadius: 5,
-        marginLeft: 230,
+        marginLeft:300,
+        position:"absolute",
     },
 
 });
