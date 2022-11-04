@@ -5,9 +5,13 @@ import Task from './components/Task';
 
 export default function App() {
   const [task, setTask] = useState();
-  const handleAddTask = () => {
 
+
+  const handleAddTask = () => {
+    console.log(task)
   }
+
+
   return (
     <View style={styles.container}>
       {/* Today's Tasks */}
@@ -30,7 +34,7 @@ export default function App() {
       <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding " : "heigth"}style={styles.writeTaskWraper}>
         <TextInput style={styles.input} placeholder={'Escreva uma tarefa!'} value={task} onChangeText={text => setTask(text)}/>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => handleAddTask()}>
           <View style={styles.addWrapper}>
 
             <Text style={styles.addText}>+</Text>
